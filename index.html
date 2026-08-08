@@ -755,7 +755,7 @@
         <div class="contact-form-wrapper reveal">
           <h3>Send Us an Inquiry</h3>
           <p>Share your requirements and we will respond with product guidance, pricing support, sample availability, or specification discussion.</p>
-          <form class="contact-form" id="contactForm" name="zorvique-buyer-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleFormSubmit(event)">
+          <form class="contact-form" id="contactForm" name="zorvique-buyer-inquiry" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleFormSubmit(event)">
             <div class="form-grid">
               <div class="form-group">
                 <label for="contact-name">Name *</label>
@@ -795,6 +795,7 @@
                 <textarea id="contact-message" name="message" placeholder="Share any specific requirements, preferred Incoterms, documentation needs, or questions..."></textarea>
               </div>
             </div>
+            <input type="hidden" name="form-name" value="zorvique-buyer-inquiry">
             <input type="text" name="bot-field" style="display:none;" tabindex="-1" autocomplete="off">
             <div class="form-submit">
               <button type="submit" class="btn btn--primary btn--lg" id="submitBtn">Send Inquiry</button>
